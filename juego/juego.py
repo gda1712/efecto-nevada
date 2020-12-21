@@ -1,6 +1,6 @@
 from sys import exit
 from random import randint
-from .pelotasNieve import PelotasNieve
+from .pelota import Pelota
 import pygame
 
 
@@ -18,7 +18,7 @@ class Juego(object):
         self.__reloj = pygame.time.Clock()
 
         # Declaramos los colores necesarios en el programa
-        self.__colorFondo = (34,40,49)
+        self.__colorFondo = (34, 40, 49)
         self.__colorPelotas = (255, 255, 255)
 
         # Declaramos la lista de pelotas y sus valores
@@ -26,7 +26,7 @@ class Juego(object):
 
         # Generamos las pelotas COPOS de NIEVE y lo añadimos a la lista
         for i in range(0, cantidadPelotas):
-            nuevaPelota = PelotasNieve(self.__ventana, randint(0, 800), randint(0, 600), self.__colorPelotas, 1)
+            nuevaPelota = Pelota(self.__ventana, randint(0, 800), randint(0, 600), self.__colorPelotas, 1)
             self.__pelotas.append(nuevaPelota)
 
         # Iniciamos el Loop
@@ -70,6 +70,6 @@ class Juego(object):
             pelota.setPosY(pelota.getPosY() + 3)
 
             # Pintamos la pelota de nieve
-            pelota.pintarPelotaNieve()
+            pelota.pintarPelota()
 
 

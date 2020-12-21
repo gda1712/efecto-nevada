@@ -1,6 +1,6 @@
 import pygame
 
-class PelotasNieve(object):
+class Pelota(object):
     
     """
     Clase que representa una pelota de nieve
@@ -34,7 +34,7 @@ class PelotasNieve(object):
         return self.__posY
 
 
-    def pintarPelotaNieve(self):
+    def pintarPelota(self):
         # Método que se encarga de pintar la pelota de nieve
         pygame.draw.circle(self.__ventana, self.__color, (self.__posX, self.__posY), self.__radio)
 
