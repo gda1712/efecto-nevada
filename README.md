@@ -2,7 +2,7 @@
 
 _Pequeño programa escrito en python, que hace el efecto de copos de nieve cayendo lentamente_
 
-![Nevada](https://raw.githubusercontent.com/gda1712/calendario.js/master/img/copos_nieve.png)
+![Nevada](https://raw.githubusercontent.com/gda1712/efecto-nevada/master/img/copos_nieve.png)
 
 
 ### Dependencias 📋
