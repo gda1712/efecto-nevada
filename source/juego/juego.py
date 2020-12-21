@@ -18,7 +18,7 @@ class Juego(object):
         self.__reloj = pygame.time.Clock()
 
         # Declaramos los colores necesarios en el programa
-        self.__colorFondo = (34, 40, 49)
+        self.__colorFondo = (20, 39, 78)
         self.__colorPelotas = (255, 255, 255)
 
         # Declaramos la lista de pelotas y sus valores
