@@ -26,7 +26,7 @@ class Juego(object):
 
         # Generamos las pelotas COPOS de NIEVE y lo añadimos a la lista
         for i in range(0, cantidadPelotas):
-            nuevaPelota = Pelota(self.__ventana, randint(0, 800), randint(0, 600), self.__colorPelotas, 1)
+            nuevaPelota = Pelota(self.__ventana, randint(0, self.__tamanoVentana[0]), randint(0, self.__tamanoVentana[1]), self.__colorPelotas, randint(1, 5))
             self.__pelotas.append(nuevaPelota)
 
         # Iniciamos el Loop
@@ -59,14 +59,14 @@ class Juego(object):
         for pelota in self.__pelotas:
 
             # En caso de que se salgan las peltoas de la ventana, las ponemos en un principio
-            if(pelota.getPosX() > self.__tamanoVentana[0]):
-                pelota.setPosX(0)
+            if(pelota.getPosX() < 0):
+                pelota.setPosX(self.__tamanoVentana[0])
 
             if(pelota.getPosY() > self.__tamanoVentana[1]):
                 pelota.setPosY(0)
 
             # Le asignamos un movimiento para que la caida sea más realista
-            pelota.setPosX(pelota.getPosX() + randint(-3, 3))
+            pelota.setPosX(pelota.getPosX() + randint(-1, 0))
             pelota.setPosY(pelota.getPosY() + 3)
 
             # Pintamos la pelota de nieve
