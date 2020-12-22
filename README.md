@@ -43,4 +43,4 @@ Este proyecto está bajo la Licencia MIT - mira el archivo [LICENSE](LICENSE) pa
 
 
 ---
-⌨️ con ❤️ por [gda1712](https://github.com/Villanuevand) 😊
+⌨️ con ❤️ por [gda1712](https://github.com/gda1712) 😊
